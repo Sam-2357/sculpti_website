@@ -46,10 +46,14 @@
             background-color: var(--emerald);
             color: var(--eerie-black);
             border: none;
-            padding: 10px 20px;
+            padding: 15px 30px;
             cursor: pointer;
             text-transform: uppercase;
             font-family: 'Oswald', sans-serif;
+            display: inline-block;
+            text-align: center;
+            line-height: normal;
+            vertical-align: middle;
         }
 
         .button:hover {
@@ -90,6 +94,45 @@
 
         .split.style1 section {
             text-align: center;
+        }
+
+        #one .content {
+            margin: 0 auto;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        #three .inner {
+            margin: 0 auto;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        #three .fields {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 100%;
+        }
+
+        #three .field {
+            width: 100%;
+        }
+
+        #three textarea {
+            width: 100%;
+        }
+
+        #three form {
+            text-align: center;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
         }
     </style>
 </head>
@@ -163,7 +206,7 @@
                     </section>
                 </div>
                 <ul class="actions">
-                    <li><a href="#three" class="button">Get Started</a></li>
+                    <li><a href="#three" class="button">Download Now</a></li>
                 </ul>
             </div>
         </section>
@@ -173,28 +216,26 @@
             <div class="inner">
                 <h2>Get in Touch</h2>
                 <p>Have questions or need support? Contact us, and we’ll be happy to help you on your fitness journey.</p>
-                <div class="split style1">
-                    <section>
-                        <form method="post" action="#">
-                            <div class="fields">
-                                <div class="field half">
-                                    <label for="name">Name</label>
-                                    <input type="text" name="name" id="name" />
-                                </div>
-                                <div class="field half">
-                                    <label for="email">Email</label>
-                                    <input type="email" name="email" id="email" />
-                                </div>
-                                <div class="field">
-                                    <label for="message">Message</label>
-                                    <textarea name="message" id="message" rows="5"></textarea>
-                                </div>
+                <div>
+                    <form method="post" action="#">
+                        <div class="fields">
+                            <div class="field">
+                                <label for="name">Name</label>
+                                <input type="text" name="name" id="name" />
                             </div>
-                            <ul class="actions">
-                                <li><input type="submit" value="Send Message" class="button" /></li>
-                            </ul>
-                        </form>
-                    </section>
+                            <div class="field">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" />
+                            </div>
+                            <div class="field">
+                                <label for="message">Message</label>
+                                <textarea name="message" id="message" rows="5"></textarea>
+                            </div>
+                        </div>
+                        <ul class="actions">
+                            <li><input type="submit" value="Send Message" class="button" /></li>
+                        </ul>
+                    </form>
                 </div>
             </div>
         </section>
