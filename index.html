@@ -1,94 +1,117 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sculpti - AI-Powered Fitness</title>
-    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Sculpti</title>
     <style>
-        /* Quick inline styles for simplicity */
+        /* Define the color palette */
+        :root {
+            --eerie-black: #191919;
+            --light-gray: #e2e6e8;
+            --blue-ncs: #2e86ab;
+            --emerald: #57cc99;
+            --icterine: #f5f749;
+        }
+
+        /* Global styles */
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #191919;
-            color: #ffffff;
-        }
-        header {
-            background-color: #2e86ab;
-            padding: 2rem;
+            background-color: var(--light-gray);
+            color: var(--eerie-black);
             text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-            color: #f5f749;
-        }
-        header p {
-            margin: 0.5rem 0;
-            font-size: 1.2rem;
-        }
-        section {
-            padding: 2rem;
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-        section h2 {
-            font-size: 2rem;
-            color: #57cc99;
-        }
-        section p {
-            font-size: 1rem;
             line-height: 1.6;
         }
-        footer {
-            background-color: #2e86ab;
-            padding: 1rem;
-            text-align: center;
-            color: #ffffff;
+
+        header {
+            margin-top: 2rem;
         }
-        a {
-            color: #f5f749;
+
+        header img {
+            width: 120px; /* Adjust the logo size as needed */
+            height: auto;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: var(--eerie-black);
+            margin: 0.5rem 0;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1.5rem;
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h2 {
+            color: var(--blue-ncs);
+            margin-bottom: 1rem;
+        }
+
+        .content p {
+            color: var(--eerie-black);
+            margin-bottom: 1.5rem;
+        }
+
+        .content a {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: var(--emerald);
+            color: var(--white);
             text-decoration: none;
+            border-radius: 5px;
         }
-        a:hover {
-            text-decoration: underline;
+
+        .content a:hover {
+            background-color: var(--icterine);
+            color: var(--eerie-black);
+        }
+
+        footer {
+            margin-top: 2rem;
+            padding: 1rem;
+            background-color: var(--blue-ncs);
+            color: var(--white);
+        }
+
+        footer p {
+            margin: 0;
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header Section -->
     <header>
-        <h1>Welcome to Sculpti</h1>
-        <p>AI-Powered Workouts and Progress Tracking</p>
+        <!-- Logo -->
+        <img src="images/IMG_5731.png" alt="Sculpti Logo">
+        <!-- Heading -->
+        <h1>Sculpti</h1>
     </header>
 
-    <!-- About Section -->
-    <section>
+    <!-- Main Content Section -->
+    <div class="content">
         <h2>About Sculpti</h2>
-        <p>Sculpti is your ultimate fitness companion, combining cutting-edge AI with personalized insights to help you achieve your fitness goals. From generating tailored workouts to tracking your progress, Sculpti empowers you to maximize your potential.</p>
-    </section>
+        <p>Sculpti leverages advanced AI to generate personalized workout plans and track your progress with precision. Take your fitness journey to the next level with tailored solutions designed for your goals.</p>
 
-    <!-- Features Section -->
-    <section>
-        <h2>Why Choose Sculpti?</h2>
-        <p>
-            <strong>Custom Workouts:</strong> AI-driven plans tailored to your goals.<br>
-            <strong>Progress Tracking:</strong> Track your journey with advanced insights.<br>
-            <strong>Simple and Intuitive:</strong> Fitness tools that fit your lifestyle.
-        </p>
-    </section>
+        <h2>Support</h2>
+        <p>Need help? <a href="mailto:support@sculpti.com">Contact our support team</a> for assistance.</p>
 
-    <!-- Contact Section -->
-    <section>
-        <h2>Get in Touch</h2>
-        <p>Have questions? Reach out to us anytime!</p>
-        <p>Email: <a href="mailto:support@sculpti.com">support@sculpti.com</a></p>
-    </section>
+        <h2>Privacy Policy</h2>
+        <p>Your privacy is our priority. Learn more about how we protect your data by reading our <a href="#privacy">Privacy Policy</a>.</p>
 
-    <!-- Footer -->
+        <a href="#download">Download Now</a>
+    </div>
+
+    <!-- Footer Section -->
     <footer>
         <p>&copy; 2025 Sculpti. All rights reserved.</p>
     </footer>
 </body>
 </html>
+
