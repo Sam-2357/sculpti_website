@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" href="assets/css/main.css">
     <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
     <style>
         :root {
             --eerie-black: #191919;
@@ -18,7 +19,10 @@
         body {
             background-color: var(--eerie-black);
             color: var(--light-gray);
-            font-family: Arial, sans-serif;
+            font-family: 'Source Sans Pro', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
         }
 
         #sidebar {
@@ -35,11 +39,17 @@
 
         h1, h2 {
             color: var(--emerald);
+            font-family: 'Oswald', sans-serif;
         }
 
         .button {
             background-color: var(--emerald);
             color: var(--eerie-black);
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-family: 'Oswald', sans-serif;
         }
 
         .button:hover {
@@ -49,6 +59,37 @@
         footer {
             background-color: var(--blue-ncs);
             color: var(--light-gray);
+            padding: 10px 0;
+        }
+
+        .wrapper {
+            padding: 20px;
+        }
+
+        p {
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+        }
+
+        .features section {
+            text-align: center;
+        }
+
+        .split.style1 section {
+            text-align: center;
         }
     </style>
 </head>
@@ -153,7 +194,7 @@
                         <ul class="contact">
                             <li>
                                 <h3>Email</h3>
-                                <a href="mailto:support@sculpti.com">support@sculpti.com</a>
+                                <a href="mailto:sam@sculpti.co.uk">sam@sculpti.co.uk</a>
                             </li>
                             <li>
                                 <h3>Phone</h3>
@@ -188,3 +229,4 @@
 
 </body>
 </html>
+
