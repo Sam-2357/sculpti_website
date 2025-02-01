@@ -25,6 +25,19 @@
             text-align: center;
         }
 
+        #header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 20px 0;
+        }
+
+        #header img {
+            max-width: 150px;
+            height: auto;
+        }
+
         #sidebar {
             background-color: var(--blue-ncs);
         }
@@ -96,13 +109,7 @@
             text-align: center;
         }
 
-        #one .content {
-            margin: 0 auto;
-            max-width: 800px;
-            text-align: center;
-        }
-
-        #three .inner {
+        #one .content, #three .inner {
             margin: 0 auto;
             max-width: 800px;
             text-align: center;
@@ -115,16 +122,8 @@
             width: 100%;
         }
 
-        #three .field {
+        #three .field, #three textarea {
             width: 100%;
-        }
-
-        #three textarea {
-            width: 100%;
-        }
-
-        #three form {
-            text-align: center;
         }
 
         .actions {
@@ -137,6 +136,13 @@
     </style>
 </head>
 <body class="is-preload">
+
+    <!-- Header with Images -->
+    <div id="header">
+        <img src="images/workout_generator.png" alt="Workout Generator Screenshot">
+        <img src="images/IMG_5731.png" alt="Sculpti Logo">
+        <img src="images/workout_library.png" alt="Workout Library Screenshot">
+    </div>
 
     <!-- Sidebar -->
     <section id="sidebar">
@@ -154,7 +160,6 @@
 
     <!-- Wrapper -->
     <div id="wrapper">
-
         <!-- Intro -->
         <section id="intro" class="wrapper style1 fullscreen fade-up">
             <div class="inner">
@@ -239,7 +244,6 @@
                 </div>
             </div>
         </section>
-
     </div>
 
     <!-- Footer -->
